@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palma de Mallorca - Mediterranean Escape</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: #f8f9fa;
+        }
+
+        .hero {
+            position: relative;
+            height: 70vh;
+            background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('images/palma-banner1.jpeg') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 4rem;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 4rem;
+            text-align: center;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+            letter-spacing: 2px;
+        }
+
+        .content {
+            padding: 0 15px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .description {
+            text-align: center;
+            margin-bottom: 4rem;
+            padding: 0 20px;
+            color: #2d6a4f;
+        }
+
+        .description p {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            flex-wrap: wrap;
+            margin-bottom: 4rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            width: 450px;
+            min-height: 450px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card:nth-child(1)::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('images/palma-banner2.jpeg') center/cover;
+            opacity: 0.3; /* Increased transparency */
+            z-index: 0;
+        }
+
+        .card:nth-child(2)::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('images/palma-banner3.jpeg') center/cover;
+            opacity: 0.3; /* Increased transparency */
+            z-index: 0;
+        }
+
+        .card-content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .card h2 {
+            color: #2d6a4f;
+            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
+        }
+
+        .card p {
+            color: #495057;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            max-width: 300px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 16px 45px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: #2EC4B6;
+            color: white;
+            border: 2px solid #2EC4B6;
+        }
+
+        .btn-primary:hover {
+            background: #24a99d;
+            border-color: #24a99d;
+        }
+
+        .cta-section {
+            text-align: center;
+            padding: 5rem 20px;
+            background: #2d6a4f;
+            color: white;
+            margin-top: 4rem;
+        }
+
+        .cta-section h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .disclaimer {
+            padding: 2rem 20px;
+            background: #f0f0f0;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .card {
+                width: 90%;
+                padding: 2rem;
+                min-height: 400px;
+            }
+
+            .cards-container {
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>Discover Palma de Mallorca's Mediterranean Charm</h1>
+    </section>
+
+    <div class="content">
+        <section class="description">
+            <p>Experience the perfect blend of historic grandeur and coastal beauty in Palma de Mallorca. Wander through Gothic cathedrals, relax on golden beaches, and savor authentic tapas in hidden plazas. From sailing the Balearic Sea to exploring Serra de Tramuntana's mountain villages, create unforgettable Mediterranean memories.</p>
+        </section>
+
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-content">
+                    <h2>Travel Packages</h2>
+                    <p>Secure exclusive deals on boutique hotels and flights to this Balearic gem. Special rates for extended stays!</p>
+                    <a href="https://www.trip.com/t/y2WWePVK9P2" class="btn btn-primary" target="_blank">Book Now</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h2>Island Experiences</h2>
+                    <p>Discover boat tours, wine tastings, historic walks, and hidden coves with local experts!</p>
+                    <a href="https://gyg.me/fDxkWfbf" class="btn btn-primary" target="_blank">Explore Tours</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="cta-section">
+        <h2>Your Balearic Adventure Awaits!</h2>
+        <p>Limited availability for certain dates - reserve your spot today!</p>
+        <p style="margin-top: 1.5rem; font-size: 1.2rem;">⛵ Best Price Guarantee ⛵ 24/7 Support ⛵</p>
+    </section>
+
+    <div class="disclaimer">
+        <p>Disclosure: We may earn a commission from purchases made through links on this site. This comes at no extra cost to you and helps support our service. We only recommend products and services we truly believe in.</p>
+    </div>
+</body>
+</html>
